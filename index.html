@@ -1,49 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="./images/favicon-32x32.png"
-      type="image/x-icon"
-    />
+    <!-- Karla font family -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/app.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/app.min.css" />
     <title>Frontend Mentor | Single Price Grid Component</title>
   </head>
 
   <body>
-    <div id="container">
-      <header>
-        <h1>Join our community</h1>
-        <p class="subtitle">30-day, hassle-free money back guarantee</p>
-        <p class="description">
-          Gain access to our full library of tutorials along with expert code
-          reviews. Perfect for any developers who are serious about honing their
-          skills.
-        </p>
-      </header>
-
-      <main>
-        <section>
-          <h2>Monthly Subscription</h2>
-          <p class="price-list"><span>&dollar;29</span> per month</p>
-          <p>Full access for less than &dollar;1 a day</p>
+    <div id="root">
+      <main class="container">
+        <section class="introduction">
+          <h1>Join our community</h1>
+          <h2>30-day, hassle-free money back guarantee</h2>
+          <p>
+            Gain access to our full library of tutorials along with expert code
+            reviews. Perfect for any developers who are serious about honing
+            their skills.
+          </p>
+        </section>
+        <section class="subscription">
+          <h1>Monthly Subscription</h1>
+          <div class="price-list">
+            <span>$29</span>
+            <span>per month</span>
+          </div>
+          <p>Full access for less than $1 a day</p>
           <button>Sign Up</button>
         </section>
-
-        <section>
-          <h2>Why Us</h2>
+        <section class="features">
+          <h1>Why Us</h1>
           <ul>
             <li>Tutorials by industry experts</li>
-            <li>Peer &amp; expert code review</li>
+            <li>Peer & expert code review</li>
             <li>Coding exercises</li>
             <li>Access to our GitHub repos</li>
             <li>Community forum</li>
@@ -52,14 +47,13 @@
           </ul>
         </section>
       </main>
+
+      <footer>
+        <p class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+          Coded by <strong>Mayur Dayal</strong>.
+        </p>
+      </footer>
     </div>
-    <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <span>Mayur Dayal</span>.
-      </p>
-    </footer>
   </body>
 </html>
